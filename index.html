@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Jianghan Xia | Academic Homepage</title>
+
     <style>
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* General page style */
         body {
             font-family: Arial, "Microsoft YaHei", sans-serif;
             margin: 0;
@@ -13,6 +23,7 @@
             line-height: 1.8;
         }
 
+        /* Header */
         header {
             background: #17365d;
             color: white;
@@ -30,11 +41,17 @@
             font-size: 17px;
         }
 
+        /* Navigation bar */
         nav {
             background: #ffffff;
             padding: 15px;
             text-align: center;
+
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         nav a {
@@ -42,155 +59,321 @@
             text-decoration: none;
             color: #17365d;
             font-weight: bold;
+            transition: color 0.3s;
         }
 
+        nav a:hover {
+            color: #4a90e2;
+        }
+
+        /* Main content sections */
         section {
             background: white;
             max-width: 950px;
             margin: 30px auto;
             padding: 30px;
+
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+
+            scroll-margin-top: 90px;
         }
 
+        /* Section titles */
         h2 {
             color: #17365d;
             border-bottom: 2px solid #e0e7ef;
             padding-bottom: 10px;
         }
 
+        h3 {
+            color: #263238;
+            margin-top: 20px;
+        }
+
+        /* Lists */
+        ul {
+            padding-left: 35px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Project card */
         .project {
             background: #eef4fa;
             padding: 20px;
             border-radius: 8px;
+            margin-top: 15px;
         }
 
+        .project h3 {
+            margin-top: 0;
+            color: #17365d;
+        }
+
+        /* Links */
+        a {
+            color: #2166b1;
+        }
+
+        a:hover {
+            color: #17365d;
+        }
+
+        /* Footer */
         footer {
             text-align: center;
             padding: 30px;
             color: #777;
+            font-size: 14px;
         }
 
+        /* Mobile responsive design */
         @media (max-width: 700px) {
-            header h1 { font-size: 28px; }
-            nav a { display: inline-block; margin: 6px; }
-            section { margin: 15px; padding: 20px; }
+
+            header {
+                padding: 45px 15px;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            header p {
+                font-size: 15px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 6px;
+                font-size: 14px;
+            }
+
+            section {
+                margin: 15px;
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
         }
+
     </style>
+
 </head>
+
 
 <body>
 
+<!-- ================= HEADER ================= -->
+
 <header>
+
     <h1>Jianghan Xia | 夏江涵</h1>
-    <p>Orthopaedic Oncology · Trauma and Microsurgery</p>
-    <p>Peking University People's Hospital | 北京大学人民医院</p>
+
+    <p>
+        Orthopaedic Oncology · Trauma and Microsurgery
+    </p>
+
+    <p>
+        Peking University People's Hospital
+    </p>
+
 </header>
 
+
+<!-- ================= NAVIGATION ================= -->
+
 <nav>
+
     <a href="#about">About</a>
+
     <a href="#education">Education</a>
+
     <a href="#research">Research</a>
+
     <a href="#publications">Publications</a>
+
     <a href="#projects">Projects</a>
+
     <a href="#contact">Contact</a>
+
 </nav>
 
+
+<!-- ================= ABOUT ================= -->
+
 <section id="about">
-    <h2>About Me | 个人简介</h2>
+
+    <h2>About Me</h2>
+
     <p>
         I am a doctoral student in Orthopaedic Oncology at
-        Peking University People's Hospital, with a background
-        in clinical medicine and orthopaedic surgery.
-        My research interests focus on orthopaedic oncology,
+        Peking University People's Hospital, with an academic
+        background in clinical medicine and orthopaedic surgery.
+
+        My research interests primarily focus on orthopaedic oncology,
         trauma and microsurgery.
     </p>
+
 </section>
+
+
+<!-- ================= EDUCATION ================= -->
 
 <section id="education">
-    <h2>Education | 教育背景</h2>
-    <p><strong>Peking University</strong><br>
-       Doctoral Studies in Orthopaedic Oncology · 2026–Present
+
+    <h2>Education</h2>
+
+    <p>
+        <strong>Peking University</strong><br>
+        Doctoral Studies in Orthopaedic Oncology<br>
+        2026 – Present
     </p>
 
-    <p><strong>Wuhan University</strong><br>
-       Master of Clinical Medicine (Orthopaedics) · 2023–2026
+    <p>
+        <strong>Wuhan University</strong><br>
+        Master of Clinical Medicine (Orthopaedics)<br>
+        2023 – 2026
     </p>
 
-    <p><strong>Wuhan University</strong><br>
-       Clinical Medicine · 2018–2023
+    <p>
+        <strong>Wuhan University</strong><br>
+        Clinical Medicine<br>
+        2018 – 2023
     </p>
+
 </section>
+
+
+<!-- ================= RESEARCH ================= -->
 
 <section id="research">
-    <h2>Research Interests | 研究方向</h2>
+
+    <h2>Research Interests</h2>
 
     <ul>
-        <li>Orthopaedic Oncology | 骨肿瘤</li>
-        <li>Trauma and Microsurgery | 创伤与显微骨科</li>
+
+        <li>
+            Orthopaedic Oncology
+        </li>
+
+        <li>
+            Trauma and Microsurgery
+        </li>
+
+        <li>
+            Single-cell RNA Sequencing (scRNA-seq)
+            — <em>Currently Learning</em>
+        </li>
+
+        <li>
+            Spatial Transcriptomics
+            — <em>Currently Learning</em>
+        </li>
+
     </ul>
 
-    <h3>Currently Learning | 目前正在学习</h3>
-
-    <ul>
-        <li>Single-cell RNA Sequencing (scRNA-seq) | 单细胞RNA测序</li>
-        <li>Spatial Transcriptomics | 空间转录组学</li>
-    </ul>
 </section>
+
+
+<!-- ================= PUBLICATIONS ================= -->
 
 <section id="publications">
-    <h2>Publications | 学术论文</h2>
+
+    <h2>Publications</h2>
+
     <p>
         Xia J, et al.
-        <em>Triboelectric immunotherapy for graft-free repair of bone defects.</em>
+
+        <em>
+            Triboelectric immunotherapy for graft-free repair of bone defects.
+        </em>
+
         Chemical Engineering Journal, 2026.
     </p>
+
 </section>
 
+
+<!-- ================= PROJECTS ================= -->
+
 <section id="projects">
-    <h2>Projects | 项目展示</h2>
+
+    <h2>Projects</h2>
 
     <div class="project">
-        <h3>Python Course Project | Python课程作业</h3>
+
+        <h3>Python Course Project</h3>
 
         <p>
+            <strong>Project Title:</strong><br>
             Breast Cancer Recurrence Prediction
         </p>
 
         <p>
             <strong>Status:</strong> In Progress
         </p>
+
+        <p>
+            The project will be updated with analysis results,
+            visualizations, source code, and the final report.
+        </p>
+
     </div>
+
 </section>
 
+
+<!-- ================= CONTACT ================= -->
+
 <section id="contact">
-    <h2>Contact | 联系方式</h2>
+
+    <h2>Contact</h2>
 
     <p>
-        <strong>Peking University Email:</strong>
+        <strong>Peking University Email:</strong><br>
+
         <a href="mailto:2611110401@stu.pku.edu.cn">
             2611110401@stu.pku.edu.cn
         </a>
     </p>
 
     <p>
-        <strong>Wuhan University Email:</strong>
+        <strong>Wuhan University Email:</strong><br>
+
         <a href="mailto:xiajianghan@whu.edu.cn">
             xiajianghan@whu.edu.cn
         </a>
     </p>
 
     <p>
-        <strong>GitHub:</strong>
-        <a href="https://github.com/Xialan0614">
+        <strong>GitHub:</strong><br>
+
+        <a href="https://github.com/Xialan0614"
+           target="_blank"
+           rel="noopener noreferrer">
+
             github.com/Xialan0614
+
         </a>
     </p>
+
 </section>
 
+
+<!-- ================= FOOTER ================= -->
+
 <footer>
-    © 2026 Xia Jianghan · Academic Homepage
+
+    © 2026 Jianghan Xia · Academic Homepage
+
 </footer>
+
 
 </body>
 </html>
